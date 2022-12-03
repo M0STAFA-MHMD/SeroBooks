@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    text-decoration: none;
+    transition: all .3s cubic-bezier(.38, 1.15, .7, 1.12);
+
+}
+body{
+    scroll-behavior: smooth !important;
+}
+
+/* --------------------- ناف بار البداية --------------------- */
+
+.main-section{
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    background-image: linear-gradient(to right, #2e3442 , #171721);
+}
+.nav .logo img{
+    height: 30px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+.links{
+    padding: 0 30px;
+}
+.nav .links ul li{
+    list-style: none;
+    display: inline;
+}
+.links ul li a{
+    color: #fff;
+    padding: 12px;
+}
+@media (max-width: 622px){
+    .nav{
+        height: 120px;
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    .nav .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 0;
+    }
+    .nav .logo img{
+        height: 40px;
+        align-items: center;
+    }
+}
+@media (max-width: 429px){
+    .links{
+        padding: 0 10px;
+    }
+}
+@media (max-width: 489px){
+    .nav .logo img{
+        height: 35px;
+    }
+    .links ul li a{
+        font-size: 15px;
+    }
+    .links{
+        padding: 0 10px;
+    }
+    .links ul li a{
+        padding: 8px;
+    }
+}
+@media (max-width: 341px){
+    .links ul li a{
+        font-size: 15px;
+    }
+    .links{
+        padding: 0 7px;
+    }
+    .links ul li a{
+        padding: 5px;
+    }
+}
+
+
+/* --------------------- ناف بار النهاية --------------------- */
+
+
+
+
+
+/* --------------------- الرئيسية البداية --------------------- */
+
+.header{
+    background: url("../image/bg-library.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.gradient {
+    background: linear-gradient(to right, #2e3442 , #171721);
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+    z-index: 10;
+}
+.content{
+    background: linear-gradient(to right, #2e3442 , #171721);
+    opacity: 0.7;
+}
+.centre{
+    position: absolute;
+	top: 55%;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 10px;
+}
+.main-text{
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+.main-text span{
+    color: tomato;
+    text-align: center;
+}
+.store{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+}
+@media (max-width: 609px){
+    .main-text{
+        font-weight: 400;
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+    }
+}
+@media (max-width: 491px){
+    .main-text{
+        font-size: 35px;
+    }
+}
+@media (max-width: 432px){
+    .main-text{
+        font-size: 30px;
+    }
+}
+@media (max-width: 373px){
+    .main-text{
+        font-size: 25px;
+    }
+}
+
+
+
+/* --------------------- الرئيسية النهاية --------------------- */
+
+
+
+
+
+/* --------------------- تفاصيل التطبيق البداية --------------------- */
+
+.details-app{
+    background-color: #171721;
+    padding: 20px 0px;
+    border-bottom: 2px solid rgba(255, 99, 71, 0.3);
+    border-top: 2px solid rgba(255, 99, 71, 0.3);
+}
+.boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.boxs div {
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid tomato ;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px;
+    color: tomato;
+}
+.boxs div img{
+    height: 120px;
+}
+
+/* --------------------- تفاصيل التطبيق النهاية --------------------- */
+
+
+
+
+
+/* --------------------- انواع الكتب البداية --------------------- */
+
+.type-books{
+    width: 100%;
+    padding: 20px 30px;
+    background-color: #242435;
+    border-bottom: 2px solid rgba(255, 99, 71, 0.3);
+    overflow: hidden;
+}
+.heading {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.heading span {
+    color: tomato;
+    text-transform: uppercase;
+}
+.type-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+    flex-direction: row;
+}
+.type-box div {
+    margin: 15px;
+    color: #fff;
+    border: 2px solid #25253b;
+    border-radius: 15px;
+}
+.type-box div:first-child{
+    background: url("../image/book-rawhany.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.type-box div:nth-child(2){
+    background: url("../image/book-thkafy.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.type-box div:last-child{
+    background: url("../image/book-elmia.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.type-box div h1{
+    padding: 60px 80px;
+}
+
+/* --------------------- انواع الكتب النهاية --------------------- */
+
+
+
+
+
+/* --------------------- شوت للتطبيق البداية --------------------- */
+
+.shot-app{
+    padding: 20px 0px;
+    width: 100%;
+    background-color: #171721;
+    text-align: center;
+}
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    flex-direction: row;
+}
+.FlexContainer div {
+    margin: 20px;
+}
+.FlexContainer div img{
+    height: 400px;
+}
+.heading {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.heading span {
+    color: tomato;
+    text-transform: uppercase;
+}
+
+/* --------------------- شوت للتطبيق النهاية --------------------- */
+
+
+
+
+
+/* --------------------- الفوتور البداية --------------------- */
+
+.footer{
+    width: 100%;
+    background-color: #242435;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0px;
+    height: 10vh;
+}
+.footer a{
+    color: tomato;
+}
+@media (max-width: 418px){
+    .footer{
+        height: 85px;
+        padding: 15px;
+    }
+}
+
+.nav-item .nav-link:hover{
+    color: tomato !important;
+}
+/* --------------------- الفوتور النهاية --------------------- */
